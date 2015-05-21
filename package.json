@@ -20,7 +20,9 @@
     "email": "hughskennedy@gmail.com",
     "url": "http://hughsk.io/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "es6-symbol": "^2.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/stackgl/gl-flags.git"

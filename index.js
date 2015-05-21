@@ -1,5 +1,9 @@
+var Symbol = global.Symbol || require('es6-symbol')
+var CACHE  = Symbol('gl-flags:cache')
+
 module.exports = Flags
 
+var minor = 1 // bump this value on increasing the minor or major versions
 var flags = [
   'BLEND',
   'CULL_FACE',
@@ -10,11 +14,13 @@ var flags = [
   'STENCIL_TEST'
 ]
 
-// TODO: cache per version/context
 function Flags(gl) {
+  var cache = gl[CACHE] = gl[CACHE] || {}
+  if (cache[minor]) return cache[minor]
+
+  var toggler  = cache[minor] = {}
   var _enable  = gl.enable
   var _disable = gl.disable
-  var toggler  = {}
   var state    = {}
   var index    = {}
 
