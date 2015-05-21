@@ -1,6 +1,6 @@
 {
   "name": "gl-flags",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily change and access your WebGL flags set by gl.enable/gl.disable with minimised overhead",
   "main": "index.js",
   "license": "MIT",
