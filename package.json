@@ -1,0 +1,42 @@
+{
+  "name": "gl-flags",
+  "version": "1.0.0",
+  "description": "Easily change and access your WebGL flags set by gl.enable/gl.disable with minimised overhead",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "browserify test.js -t babelify | tap-closer | smokestack | tap-spec"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.0",
+    "browserify": "^10.2.0",
+    "smokestack": "^3.2.0",
+    "tap-closer": "^1.0.0",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/gl-flags.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl",
+    "flags",
+    "webgl",
+    "toggle",
+    "parameters",
+    "gl",
+    "enable",
+    "disable"
+  ],
+  "homepage": "https://github.com/stackgl/gl-flags",
+  "bugs": {
+    "url": "https://github.com/stackgl/gl-flags/issues"
+  }
+}
